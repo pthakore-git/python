@@ -1,0 +1,19 @@
+echo "# python" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pthakore-git/python.git
+git push -u origin main
+
+import random
+
+def pick_a_card():
+  card_suits = ["Diamonds", "Hearts", "Clubs", "Spades"]
+  random_suit = random.choice(card_suits)
+  print(random_suit)
+
+  card_ranks = [2, 3, 4, 5, 6, 7, 8, 9, "Jack", "Queen", "King", "Ace"]
+  random_rank = random.choice(card_ranks)
+  print(random_rank)
+pick_a_card()
